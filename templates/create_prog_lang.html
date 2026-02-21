@@ -1,0 +1,12 @@
+<center>
+   <h1>дрбавить язык праграмирования</h1>
+
+   <form action="{% url 'yaziki:sozdat_blog' %}" method="post" enctype="multipart/form-data"></form>
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <button type="submit">Добавить</button>
+        
+    </form>
+<center>

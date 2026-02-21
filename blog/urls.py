@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import HelloworldView, NameView, PhotoView
 
 urlpatterns = [
-    path('hello/', views.hello_world_view,),
-    path('name/', views.name,),
-    path('photo/', views.photo,),
+    path('hello/',HelloworldView.as_vaew(), name='hello_world'),
+    path('name/',NameView.as_view(), name='name',),
+    path('photo/',PhotoView.as_view(), name='photo',),
 ]
